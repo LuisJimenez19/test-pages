@@ -1,0 +1,30 @@
+
+@media(max-width:500px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a{
+        padding: 16px 0;
+        display: none;
+    }
+    .menuDespl{
+        display: block;
+    }
+}
+
+/*En el responsive solo van los media*/
+
+@media(max-width:320px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header a{
+        padding: 16px 0;
+        display: none;
+    }
+    .menuDespl{
+        display: block;
+    }
+}

@@ -16,7 +16,7 @@ header{
     padding: 0;
 }
 
-a{
+.header a{
     color: white;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgba(172, 155, 155, 0.5);
@@ -79,7 +79,7 @@ a:hover {
 }
 
 /*SECCION PRINCIPAL */
-.principalSection {
+.hero {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -89,7 +89,7 @@ a:hover {
     background-color: #121212;
 }
 
-.principalSectionText {
+.heroText {
     width: 50%;
     height: 100%;
     display: flex;
@@ -101,14 +101,14 @@ a:hover {
     text-shadow: 2px 2px 4px rgba(231, 222, 222, 0.5);
 }
 
-.principalSectionText h1 {
+.heroText h1 {
     font-size: 40px;
     font-weight: 700;
     color: #f5f4f4;
     margin: 0px;
 }
 
-.principalSectionText img {
+.heroText img {
     width: 50px;
     height: 40px;
 }
@@ -116,10 +116,10 @@ a:hover {
 .imagenPrincipal {
     border-radius: 50%;
     margin: 0px;
-    margin-right: 100px;
-    margin-top: 20px;
-    width: 450px;
-    height: 450px;
+    margin-right: 200px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
     display: inline-block;
     position: relative;
 }
@@ -175,10 +175,6 @@ h3 {
     justify-content: space-around;
     align-items: center;
     background-color: #0B212D;
-    background-image: url(img/imgBack.png); /* Agrega la imagen de fondo */
-    background-size: cover; /* Asegúrate de que la imagen cubra toda la sección */
-    background-position: center; /* Centra la imagen */
-    background-blend-mode: overlay; /* Combina la imagen con el color de fondo */
     flex-direction: column;
 }
 
@@ -200,7 +196,7 @@ h3 {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-    grid-column-gap: 10px; /* Espacio entre columnas */
+    grid-column-gap: 1px; /* Espacio entre columnas */
     grid-row-gap: 10px; /* Espacio entre filas */
     justify-items: center;
 
@@ -208,27 +204,99 @@ h3 {
 }
 
 .card {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
     background-color: #142935;
     cursor: pointer;
     align-items: center;
     text-align: center;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.cardText p {
+    font-size: larger;
+    font-weight: 600;
+    color: #EEEEEE;
+    text-shadow: 2px 2px 4px rgba(231, 222, 222, 0.5);
 }
 
 .cardText {
-    align-items: center;
+    align-items: flex-end;
     height: 50%;
     padding: 0px 10px 0px 10px;
     text-align: center;
 }
 
 .cardImg {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    margin-top: 15px;
 }
 
 h1{
     color: #EEEEEE;
+}
+
+
+/* MY PROYECTS */
+.myProyects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0B212D;
+    flex-direction: column;
+}
+
+.myProyectsText{
+    display: block;
+    justify-content: space-evenly;
+    text-align: right;
+    padding-right: 40%;
+    align-items: flex-start;
+    text-shadow: 2px 2px 4px rgba(231, 222, 222, 0.5);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.cardImgPr{
+    margin-top: 25px;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    margin-bottom: 700px;
+    border-radius: 20px;
+}
+
+.buttonProyect {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-right: 590px;
+    margin-bottom: 80px;
+}
+
+.buttonProyect button {
+    margin-right: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.myProyectsView{
+    width: 80%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-column-gap: 1px; /* Espacio entre columnas */
+    grid-row-gap: 10px; 
+    justify-items: center;
+    margin-bottom: 900px;
+
 }
