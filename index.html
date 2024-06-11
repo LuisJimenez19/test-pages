@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>PortfolioEspinola</title>
 </head>
 <body>
     <header>
         <div class="titulo">
-            <h2 class="primerH2">Espinola</h2>
+            <h2 class="primerH2">Espi</h2>
             <h2 class="segundoH2">Design</h2>
         </div>
         <div class="nav-links">
@@ -30,7 +32,9 @@
             <h1>CREATIVE WEB <span class="segundoH2">DEVELOPER</span></h1>
             <section class="buttonPS">
                 <button class="contact">Hire me</button>
-                <button class="contact">Download CV</button>
+                <a href="pages/CV - Espínola Facundo.pdf" download>
+                    <button class="contact">Download CV</button>
+                </a>
             </section>
         </section>
         <img class="imagenPrincipal" src="img/fotoInicial.jpeg" />
@@ -47,7 +51,7 @@
     </div>
     <div class="myServices">
         <section class="myServicesText">
-            <h1>My&nbsp;<span class="segundoH2">Services</span></h1>
+            <h1>My&nbsp;<span class="segundoH2">Skills</span></h1>
         </section>
         <section class="sectionView">
             <section class="card">
@@ -137,35 +141,54 @@
         <section class="form">
             <form>
                 <div class="formData">
+                    <div class="form-group">
+                        <label for="name">Tu nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Tu email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tu mensaje</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <!--<div class="formData">
                     <label for="name">Tu Nombre:</label>
                     <input type="text" id="name" name="name">
-                
-                    
                     <label for="email">Tu Email:</label>
                     <input type="email" id="email" name="email">
                 </div>
                 <div>
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message"></textarea>
-                </div>
+                </div>-->
             </form>
-            <button class="formButton">Enviar mensaje</button>
+            <button class="formButton">
+                Enviar mensaje
+                <i class="fas fa-paper-plane"></i>
+            </button>
         </section>
     </div>
     <footer>
         <section>
-            <a>Home<i class="fi fi-rr-home"></i></a>
-            <a>About Me</a>
-            <a>Portfolio</a>
-            <a>Services</a>
-            <a>Contact</a>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-user"></i> About Me</a>
+            <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="#"><i class="fas fa-cogs"></i> Services</a>
+            <a href="#"><i class="fas fa-phone"></i>2634587463</a>
         </section>
         <section>
-            <a>Email - facunicoespinola123@gmail.com</a> 
+            <a><i class="fas fa-envelope"></i>Email - facunicoespinola123@gmail.com</a> 
         </section>
-        <section>
+        <section class="social-icons">
             <a>Follow Me</a>
-
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/FacuEspi04" target="_blank"><i class="fab fa-github"></i></a>
+            
         </section>
     </footer>
     <!--<script src="js/app.js"></script>-->
