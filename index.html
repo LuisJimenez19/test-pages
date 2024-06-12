@@ -1,186 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <title>PortfolioEspinola</title>
-</head>
-<body>
+  </head>
+  <body class="container">
+    <!-- HEADER -> NAVBAR -->
     <header>
-        <div class="titulo">
-            <h2 class="primerH2">Espi</h2>
-            <h2 class="segundoH2">Design</h2>
-        </div>
-        <div class="nav-links">
-            <a href="">Home</a>
-            <a href="">About Me</a>
-            <a href="">Portfolio</a>
-            <a href="">Services</a>
-            <a href="">
-                <button class="contact">Contact</button>
-            </a>
-        </div>
+      <div class="titulo">
+        <h2 class="primerH2">Espi</h2>
+        <h2 class="segundoH2">Design</h2>
+      </div>
+      <nav class="nav-links">
+        <a href="">Home</a>
+        <a href="">About Me</a>
+        <a href="">Portfolio</a>
+        <a href="">Services</a>
+        <a href="">
+          <span class="contact">Contact</span>
+        </a>
+      </nav>
     </header>
+
+    <!-- HERO -->
     <div class="hero">
+      <div>
         <section class="heroText">
-            <h1>CREATIVE WEB <span class="segundoH2">DEVELOPER</span></h1>
-            <section class="buttonPS">
-                <button class="contact">Hire me</button>
-                <a href="pages/CV - Espínola Facundo.pdf" download>
-                    <button class="contact">Download CV</button>
-                </a>
-            </section>
+          <h1>CREATIVE WEB <span class="segundoH2">DEVELOPER</span></h1>
         </section>
-        <img class="imagenPrincipal" src="img/fotoInicial.jpeg" />
+
+        <section class="buttonPS">
+          <button class="contact">Hire me</button>
+          <a href="pages/CV - Espínola Facundo.pdf" download>
+            <span class="contact"
+              >Download CV <i class="fas fa-download"></i
+            ></span>
+          </a>
+        </section>
+      </div>
+      <img class="imagenPrincipal" src="img/fotoInicial.jpeg" />
     </div>
-    <div class="aboutMeSection">
-        <section class="aboutMeText">
-            <h1>About <span class="segundoH2">Me</span></h1>
-            <h3>¡Hola!, Soy Facundo, un apasionado desarrollador web con 15 años de experiencia en la creación de soluciones digitales innovadoras y atractivas. Mi objetivo es combinar mi creatividad y habilidades técnicas para construir experiencias web que cautiven a los usuarios y ayuden a mis clientes a alcanzar sus objetivos en línea.</h3>
-            <section class="buttonPS">
-                <button class="contact">Ver trabajos</button>
-            </section>
+
+    <!-- ABOUT ME -->
+    <section class="aboutMeSection">
+      <div class="aboutMeText">
+        <h2>About <span class="segundoH2">Me</span></h2>
+        <p>
+          ¡Hola!, Soy Facundo, un apasionado desarrollador web con 15 años de
+          experiencia en la creación de soluciones digitales innovadoras y
+          atractivas. Mi objetivo es combinar mi creatividad y habilidades
+          técnicas para construir experiencias web que cautiven a los usuarios y
+          ayuden a mis clientes a alcanzar sus objetivos en línea.
+        </p>
+        <section class="buttonPS">
+          <button class="contact">Ver trabajos</button>
         </section>
-        <img class="imagenPrincipal" src="img/6502423.svg" />
-    </div>
-    <div class="myServices">
-        <section class="myServicesText">
-            <h1>My&nbsp;<span class="segundoH2">Skills</span></h1>
-        </section>
-        <section class="sectionView">
-            <section class="card">
-                <img class="cardImg" src="img/c-.svg" />
-                <section class="cardText">
-                    <p>C#</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-            <section class="card">
-                <img class="cardImg" src="img/php.svg" />
-                <section class="cardText">
-                    <p>PHP</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-            <section class="card">
-                <img class="cardImg" src="img/kotlin.png" />
-                <section class="cardText">
-                    <p>Kotlin</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-            <section class="card">
-                <img class="cardImg" src="img/js.svg" />
-                <section class="cardText">
-                    <p>JavaScript</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-            <section class="card">
-                <img class="cardImg" src="img/piton.svg" />
-                <section class="cardText">
-                    <p>Python</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-            <section class="card">
-                <img class="cardImg" src="img/java (1).svg" />
-                <section class="cardText">
-                    <p>Java</p>
-                    <a href="">
-                        <button class="contact">Ver</button>
-                    </a>
-                </section>
-            </section>
-        </section>
-    </div>
+      </div>
+      <img class="imagen-about-me" src="img/6502423.svg" />
+    </section>
+
+    <!-- SERVICES -->
+    <section class="myServices">
+      <div class="myServicesText">
+        <h2>My&nbsp;<span class="segundoH2">Skills</span></h2>
+      </div>
+      <div class="sectionView">
+        <div class="card">
+          <img class="cardImg" src="img/c-.svg" />
+          <div class="cardText">
+            <p>C#</p>
+            <a href="">
+              <button class="contact">Ver</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardImg" src="img/php.svg" />
+          <div class="cardText">
+            <p>PHP</p>
+            <a href="">
+              <button class="contact">Ver</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardImg" src="img/kotlin.png" />
+          <div class="cardText">
+            <p>Kotlin</p>
+            <a href="">
+              <button class="contact">Ver</button>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardImg" src="img/js.svg" />
+          <div class="cardText">
+            <p>JavaScript</p>
+            <button class="contact">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardImg" src="img/piton.svg" />
+          <div class="cardText">
+            <p>Python</p>
+
+            <button class="contact">Ver</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="cardImg" src="img/java (1).svg" />
+          <div class="cardText">
+            <p>Java</p>
+
+            <button class="contact">Ver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <div class="myProyects">
-        <section class="myProyectsText">
-            <h1>My&nbsp;<span class="segundoH2">Proyects</span></h1>
-        </section>
-            <section class="buttonProyect">
-                <button class="contact">Todos</button>
-                <button class="contact">Front</button>
-                <button class="contact">Back</button>
-                <button class="contact">Aplicación web</button>
-                <button class="contact">Diseño web</button>
-            </section>
-        <section class="myProyectsView">
-            <section class="card">
-                <a href="https://github.com/FacuEspi04/TPApiRestEspinolaFacundo.git"><img class="cardImgPr" src="img/6502423.svg" /></a>
-            </section>
-            <section class="card">
-                <img class="cardImgPr" src="img/6502423.svg" />
-                
-            </section>
-            <section class="card">
-                <img class="cardImgPr" src="img/6502423.svg" />
-            </section>
-        </section>
+      <section class="myProyectsText">
+        <h1>My&nbsp;<span class="segundoH2">Projects</span></h1>
+      </section>
+
+      <section class="buttonProyect">
+        <button class="contact">Todos</button>
+        <button class="contact">Front</button>
+        <button class="contact">Back</button>
+        <button class="contact">Aplicación web</button>
+        <button class="contact">Diseño web</button>
+      </section>
+
+      <section class="myProyectsView">
+        <div class="card-project">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/FacuEspi04/TPApiRestEspinolaFacundo.git"
+            ><img class="cardImgPr" src="img/6502423.svg"
+          /></a>
+          <div>
+            <h3>Api Rest</h3>
+            <small>Hecho con Java y Spring Boot</small>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <img class="cardImgPr" src="img/6502423.svg" />
+          <div>
+            <h3>Api Rest</h3>
+            <small>Hecho con Java y Spring Boot</small>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <img class="cardImgPr" src="img/6502423.svg" />
+          <div>
+            <h3>Api Rest</h3>
+            <small>Hecho con Java y Spring Boot</small>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- CONTACT ME (FORM) -->
     <div class="formProyect">
-        <section class="aboutMeText">
-            <h1>Got a proyect in your <span class="segundoH2">mind?</span></h1>
-            <img class="imagenForm" src="img/2826604.jpg" />
-        </section>
-        <section class="form">
-            <form>
-                <div class="formData">
-                    <div class="form-group">
-                        <label for="name">Tu nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Tu email</label>
-                        <input type="email" id="email" name="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Tu mensaje</label>
-                    <textarea id="message" name="message" placeholder="Message"></textarea>
-                </div>
-            </form>
-            <button class="formButton">
-                Enviar mensaje
-                <i class="fas fa-paper-plane"></i>
-            </button>
-        </section>
+      <section class="aboutMeText">
+        <h2>Got a project in your <span class="segundoH2">mind?</span></h2>
+        <img class="imagenForm" src="img/2826604.jpg" />
+      </section>
+
+      <section class="form">
+        <form>
+          <div class="formData">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tu mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+            ></textarea>
+          </div>
+        </form>
+        <button class="formButton">
+          Enviar mensaje
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </section>
     </div>
+
+    <!-- FOOTER -->
     <footer>
-        <section>
+      <section class="footer-nav">
+        <ul class="list-nav">
+          <li>
             <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+
+          <li>
             <a href="#"><i class="fas fa-user"></i> About Me</a>
+          </li>
+
+          <li>
             <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+          </li>
+
+          <li>
             <a href="#"><i class="fas fa-cogs"></i> Services</a>
+          </li>
+
+          <li>
             <a href="#"><i class="fas fa-phone"></i>2634587463</a>
-        </section>
-        <section>
-            <a><i class="fas fa-envelope"></i>Email - facunicoespinola123@gmail.com</a> 
-        </section>
-        <section class="social-icons">
-            <a>Follow Me</a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/FacuEspi04" target="_blank"><i class="fab fa-github"></i></a>
-            
-        </section>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <a href="mailto:facunicoespinola123@gmail.com" target="_blank"
+          ><i class="fas fa-envelope"></i> facunicoespinola123@gmail.com</a
+        >
+      </section>
+
+      <section class="social-icons">
+        <h4>Follow Me</h4>
+        <div>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/FacuEspi04" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </section>
     </footer>
     <!--<script src="js/app.js"></script>-->
-</body>
+  </body>
 </html>

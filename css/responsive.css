@@ -1,149 +1,188 @@
+/* ES mejor empezar desde más chico hasta más grande. 
+Si lo usas así como esta tendrías que repetir ciertas reglas css. Por ejemplo:
 
-@media(max-width:320px) {
-    /* General */
-    body, html {
-        font-size: 12px;
-    }
-    /* Header */
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+dispositivos con pantallas con un ancho menor a 320px -> @media(max-width:320px)
+Estas ocultando la imagen del hero. pero en dispositivos de 480px también tenes que ocultarla, entonces tendrías que indicarle de nuevo que lo haga.
 
-    .nav-links {
-        display: none;
-    }
-    
-    .titulo {
-        display: flex;
-        justify-content: flex-start;
-    }
+@media(min-width:320px)
+*/
 
-    /* Hero Section */
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        
-    }
 
-    .heroText {
-        width: 100%;
-        margin-left: 0;
-        flex-direction: column;
-        font-size: 50px;
-    }
-    
-    .buttonPS {
-        justify-content: space-evenly;
-        margin-left: 15px;
-    }
+@media (min-width: 480px) {
+  /* Conserva los estilos de 320px */
+}
 
-    .imagenPrincipal {
-        display: none;
-    }
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 16px;
 
-    /* About Me Section */
-    .aboutMeSection {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
+    .contact {
+      text-align: center;
+      width: auto;
+      padding: 12px;
     }
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(129, 120, 120, 0.5);
+    transition: color 0.3s;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: center;
+    gap: 50px;
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-shadow: 2px 2px 4px rgba(231, 222, 222, 0.5);
+  }
+
+  .buttonPS {
+    justify-content: start;
+  }
+
+  .imagenPrincipal {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+
+  /* SERVICES */
+  .sectionView {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Nav */
+  .nav-links {
+    display: flex;
+    gap: 24px;
+
+    .contact {
+      text-align: center;
+      width: auto;
+      padding: 12px;
+    }
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .heroText {
+    font-size: 2em;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    & h1 {
+      text-align: left;
+    }
+  }
+
+  .imagenPrincipal {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* ABOUT ME */
+  .aboutMeSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .aboutMeText {
+    & h2 {
+      font-size: 2em;
+    }
+  }
+
+  .imagen-about-me {
+    position: relative;
+    opacity: 1;
+    filter: brightness(1);
+    max-width: 500px;
+    &:hover {
+      filter: brightness(3);
+    }
+  }
+
+  /* MY PROJECTS */
+  .myProyectsView {
+    flex-direction: row;
+  }
+
+  /* CONTACT ME */
+  .formProyect {
+    height: 100vh;
+    width: 100%;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    /* background-color: #0b212d; */
 
     .aboutMeText {
-        width: 100%;
-        text-align: left;
-        font-size: x-small;
-        margin-right: 40%;
-    }
+      display: flex;
 
-    /* Services Section */
-    .myServices {
-        padding: 20px;
-        padding-top: 0%;
-        padding-bottom: 80%;
+      justify-content: center;
+      align-items: center;
     }
-    .myServicesText{
-        display: block;
-        text-align: center;
-        align-items: center;
-        margin-left: 490px;
-    }
-    .sectionView {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        margin-right: 20%;
-        
-    }
+  }
 
-    .card {
-        justify-content: center;
-        width: 78%;
-        margin-bottom: 20px;
-        
-    }
+  .imagenForm {
+    max-width: 80%;
+    height: auto;
+  }
 
-    /* Projects Section */
-    .myProyects {
-        padding: 45px;
-    }
+  form {
+    display: flex;
 
-    .myProyectsView {
-        grid-template-columns: repeat(2, 1fr);
-        width: 50%;
-    }
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
 
-    .buttonProyect{
-        display: none;
-    }
+  .formData {
+    flex-direction: row;
+  }
 
-    .cardImgPr {
-        width: 100px;
-        height: 100px;
-    }
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+  }
 
-    /* Form Section */
-    .formProyect {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .form {
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .formData {
-        flex-direction: column;
-    }
-
-    .imagenForm {
-        width: 200px;
-        height: 200px;
-        margin: 20px 0;
-    }
-
-    /* Footer */
-    footer {
-        padding: 20px;
-    }
-
-    footer section {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .list-nav {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .social-icons {
+    gap: 20px;
+  }
 }
 
-@media(max-width:480px) {
-
+@media (min-width: 1280px) {
+  .imagenPrincipal {
+    width: 400px;
+    height: 400px;
+  }
 }
-
-@media(max-width:768px) {
-
-}
-
