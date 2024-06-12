@@ -1,30 +1,149 @@
 
-@media(max-width:500px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar a{
-        padding: 16px 0;
-        display: none;
-    }
-    .menuDespl{
-        display: block;
-    }
-}
-
-/*En el responsive solo van los media*/
-
 @media(max-width:320px) {
-    .header {
+    /* General */
+    body, html {
+        font-size: 12px;
+    }
+    /* Header */
+    header {
         flex-direction: column;
         align-items: center;
     }
-    .header a{
-        padding: 16px 0;
+
+    .nav-links {
         display: none;
     }
-    .menuDespl{
+    
+    .titulo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .heroText {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        font-size: 50px;
+    }
+    
+    .buttonPS {
+        justify-content: space-evenly;
+        margin-left: 15px;
+    }
+
+    .imagenPrincipal {
+        display: none;
+    }
+
+    /* About Me Section */
+    .aboutMeSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .aboutMeText {
+        width: 100%;
+        text-align: left;
+        font-size: x-small;
+        margin-right: 40%;
+    }
+
+    /* Services Section */
+    .myServices {
+        padding: 20px;
+        padding-top: 0%;
+        padding-bottom: 80%;
+    }
+    .myServicesText{
         display: block;
+        text-align: center;
+        align-items: center;
+        margin-left: 490px;
+    }
+    .sectionView {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        margin-right: 20%;
+        
+    }
+
+    .card {
+        justify-content: center;
+        width: 78%;
+        margin-bottom: 20px;
+        
+    }
+
+    /* Projects Section */
+    .myProyects {
+        padding: 45px;
+    }
+
+    .myProyectsView {
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+    }
+
+    .buttonProyect{
+        display: none;
+    }
+
+    .cardImgPr {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Form Section */
+    .formProyect {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .form {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .formData {
+        flex-direction: column;
+    }
+
+    .imagenForm {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    footer section {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 20px;
     }
 }
+
+@media(max-width:480px) {
+
+}
+
+@media(max-width:768px) {
+
+}
+
